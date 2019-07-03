@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:text="1"
+            android:layout_marginEnd="6dp"
+            android:id="@+id/tvOrderCount"
+            android:textColor="#610909"
+            android:textSize="15sp"
+            android:layout_marginRight="6dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOrderName"
+            android:text="Isis Roselle - 20 Bags"
+            android:textColor="#574D4D"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOrderPrice"
+            android:text="13.95 EGP"
+            android:gravity="start"
+            android:textColor="#610909"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
