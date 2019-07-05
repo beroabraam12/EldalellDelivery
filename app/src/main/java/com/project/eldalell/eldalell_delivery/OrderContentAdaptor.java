@@ -1,8 +1,6 @@
 package com.project.eldalell.eldalell_delivery;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,10 +14,10 @@ import java.util.List;
 public class OrderContentAdaptor extends RecyclerView.Adapter<OrderContentAdaptor.MyviewHolder> {
     Context mContext;
 
-    List<orders_content> mData;
+    List<Orders_content> mData;
 
 
-    public OrderContentAdaptor(Context mContext, List<orders_content> mData) {
+    public OrderContentAdaptor(Context mContext, List<Orders_content> mData) {
         this.mContext = mContext;
         this.mData = mData;
 
@@ -45,25 +43,12 @@ public class OrderContentAdaptor extends RecyclerView.Adapter<OrderContentAdapto
     public void onBindViewHolder(@NonNull final MyviewHolder myviewHolder, int position) {
 
 
-        orders_content orders_content = new orders_content();
-        orders_content.setTvOrderCount(mData.get(position).getTvOrderCount());
 
-        orders_content.setTvOrderName(mData.get(position).getTvOrderName());
-        orders_content.setTvOrderPrice(mData.get(position).getTvOrderPrice());
-
-
-        myviewHolder.OrderCount.setText(mData.get(position).getTvOrderCount());
-        myviewHolder.OrderName.setText(mData.get(position).getTvOrderName());
-        myviewHolder.OrderPrice.setText(mData.get(position).getTvOrderPrice());
+        myviewHolder.OrderCount.setText(mData.get(position).getOrderCount()+"");
+        myviewHolder.OrderName.setText(mData.get(position).getOrderName());
+        myviewHolder.OrderPrice.setText(mData.get(position).CalcTotalPrice()+"");
 
 
-        myviewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
-            }
-        });
 
 
     }

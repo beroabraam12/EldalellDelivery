@@ -264,7 +264,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tvHome"
+                            android:id="@+id/tvSubjectAddress"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -294,7 +294,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tvGovernmentDetails"
+                                android:id="@+id/tvCityAddress"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="5dp"
@@ -322,7 +322,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tvDistrictDetails"
+                                android:id="@+id/tvDistrictAddress"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="5dp"
@@ -348,7 +348,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tvStreetDetails"
+                                android:id="@+id/tvStreetAddress"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="5dp"
@@ -374,7 +374,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tvBuildingDetails"
+                                android:id="@+id/tvBuildingAddress"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="5dp"
@@ -400,7 +400,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tvFloorDetails"
+                                android:id="@+id/tvFloorAddress"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="5dp"
@@ -426,7 +426,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tvApartmentDetails"
+                                android:id="@+id/tvApartmentAddress"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="5dp"

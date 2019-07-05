@@ -74,6 +74,7 @@ public class RecycleViewAdaptor extends RecyclerView.Adapter<RecycleViewAdaptor.
                 Bundle bundle = new Bundle();
                 bundle.putInt("position",position);
                 go.putExtras(bundle);
+                OrderFragment.fromOrder = true;
                 mContext.startActivity(go);
 
             }

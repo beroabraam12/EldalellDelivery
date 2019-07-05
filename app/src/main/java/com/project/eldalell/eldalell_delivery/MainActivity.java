@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity
     public static Delivery delivery;
     RequestQueue requestQueue;
     public static final String MY_PREFS_NAME = "tokenPref";
+    public static final String MY_PREFS_NAME_ORDER = "Order";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,6 +165,12 @@ public class MainActivity extends AppCompatActivity
         String token = prefs.getString("token", null);
         if (token != null) {
             MainActivity.delivery = getDeliveryAPI(token, MainActivity.this, requestQueue);
+            SharedPreferences pre = getSharedPreferences(MY_PREFS_NAME_ORDER, MODE_PRIVATE);
+            String OrderID = pre.getString("orderID", null);
+            if (OrderID != null){
+                Intent intent = new Intent(MainActivity.this,OrderNumActivity.class);
+                startActivity(intent);
+            }
         }
         super.onStart();
     }

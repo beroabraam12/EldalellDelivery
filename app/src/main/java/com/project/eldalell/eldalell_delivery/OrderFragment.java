@@ -35,6 +35,7 @@ public class OrderFragment extends Fragment {
 
     private RecyclerView mrecycleview;
 
+    public static boolean fromOrder = false;
 
     public static ArrayList<Orders> OrderList;
 
